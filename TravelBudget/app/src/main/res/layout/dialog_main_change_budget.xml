@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smooth_rectangle_shape_dialog">
+
+    <LinearLayout
+        android:id="@+id/dialog_top_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_gradient_smooth">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="초기 예산 금액을 변경합니다"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/chosun_myeongjo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_change_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_top_plate"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초기 금액"
+            android:textSize="17sp"
+            android:textColor="#303030"
+            android:fontFamily="@font/chosun_myeongjo"/>
+
+        <EditText
+            android:id="@+id/dialog_change_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:editable="false"
+            android:fontFamily="@font/chosun_myeongjo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_change_plate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_change_plate"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="변경 금액"
+            android:textSize="17sp"
+            android:textColor="#303030"
+            android:fontFamily="@font/chosun_myeongjo"/>
+
+        <EditText
+            android:id="@+id/dialog_change_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:maxLength="9"
+            android:focusedByDefault="true"
+            android:fontFamily="@font/chosun_myeongjo"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_change_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_change_plate2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#AFAFAF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_change_view"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_change_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="예산변경"
+            android:textSize="17sp"
+            android:textColor="#303030"
+            android:fontFamily="@font/chosun_myeongjo"/>
+
+        <TextView
+            android:id="@+id/dialog_change_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="108dp"
+            android:text="변경취소"
+            android:textSize="17sp"
+            android:textColor="#303030"
+            android:fontFamily="@font/chosun_myeongjo"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/dialog_change_view"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="1dp"
+        android:background="#AFAFAF"/>
+</RelativeLayout>

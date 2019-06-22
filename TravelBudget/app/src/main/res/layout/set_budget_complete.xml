@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_gradient">
+
+    <TextView
+        android:id="@+id/budget_complete_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="80dp"
+        android:text="설정이"
+        android:textSize="70sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/chosun_myeongjo"/>
+
+    <TextView
+        android:id="@+id/budget_complete_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budget_complete_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:text="완료되었습니다!"
+        android:textSize="45sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/chosun_myeongjo"/>
+
+    <TextView
+        android:id="@+id/budget_complete_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budget_complete_text2"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="80dp"
+        android:text="시작하기 버튼 클릭 후"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/chosun_myeongjo"/>
+
+    <TextView
+        android:id="@+id/budget_complete_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budget_complete_text3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:text="어플을 이용하세요."
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/chosun_myeongjo"/>
+
+    <ImageView
+        android:id="@+id/budget_complete_image"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/budget_complete_text4"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/init_image"/>
+
+    <Button
+        android:id="@+id/budget_complete_button"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_shape"/>
+
+    <TextView
+        android:id="@+id/budget_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="71dp"
+        android:gravity="center"
+        android:text="시작하기"
+        android:textSize="19sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/chosun_myeongjo"/>
+</RelativeLayout>

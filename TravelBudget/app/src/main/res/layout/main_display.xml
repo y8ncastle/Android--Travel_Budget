@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/main_top_plate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#48B1BF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/main_add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:text="내역추가"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/chosun_myeongjo"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:src="@drawable/main_image"/>
+
+        <TextView
+            android:id="@+id/main_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="초기화"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/chosun_myeongjo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_top_plate"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/smooth_rectangle_shape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 현재 남은 예산"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/chosun_myeongjo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/left_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/chosun_myeongjo"/>
+
+            <TextView
+                android:id="@+id/main_currency_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="  원"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/chosun_myeongjo"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="하루 예산이 "
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/chosun_myeongjo"/>
+
+            <TextView
+                android:id="@+id/daily_budget_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 정해지지 않았어요"
+                android:textSize="20sp"
+                android:textColor="#303030"
+                android:fontFamily="@font/chosun_myeongjo"/>
+
+            <TextView
+                android:id="@+id/daily_budget_info_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  남았어요"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/chosun_myeongjo"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재까지  "
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/chosun_myeongjo"/>
+
+            <TextView
+                android:id="@+id/budget_record_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 0 "
+                android:textSize="20sp"
+                android:textColor="#303030"
+                android:fontFamily="@font/chosun_myeongjo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 곳에서   "
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/chosun_myeongjo"/>
+
+            <TextView
+                android:id="@+id/budget_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 0 % "
+                android:textSize="20sp"
+                android:textColor="#303030"
+                android:fontFamily="@font/chosun_myeongjo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 의 예산을 사용했어요"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/chosun_myeongjo"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_major2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_major"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/smooth_rectangle_shape2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/daily_budget_set_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예산 분할 설정"
+            android:textSize="17sp"
+            android:textColor="#303030"
+            android:fontFamily="@font/chosun_myeongjo"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:background="#B2B2B2"/>
+
+        <TextView
+            android:id="@+id/budget_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="예산 금액 변경"
+            android:textSize="17sp"
+            android:textColor="#303030"
+            android:fontFamily="@font/chosun_myeongjo"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:background="#B2B2B2"/>
+
+        <TextView
+            android:id="@+id/main_backup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="기존 기록 백업"
+            android:textSize="17sp"
+            android:textColor="#303030"
+            android:fontFamily="@font/chosun_myeongjo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_major3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_major2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/smooth_rectangle_shape3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="예산 사용 내역"
+            android:textSize="20sp"
+            android:textColor="#303030"
+            android:fontFamily="@font/chosun_myeongjo"/>
+        
+        <RelativeLayout
+            android:id="@+id/main_consume_list_plate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/smooth_rectangle_shape4">
+
+            <ListView
+                android:id="@+id/main_consume_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_list_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_major2"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="기록한 내용이 없습니다.\n\n\n상단의 내역추가 버튼을 통해\n\n\n내용을 추가해주세요."
+        android:textSize="18sp"
+        android:textColor="#8E8E8E"
+        android:fontFamily="@font/chosun_myeongjo"
+        android:visibility="visible"/>
+</RelativeLayout>
